@@ -1,0 +1,9 @@
+.avatar proportioned {
+    width: 300px;
+    height:auto; /* Mantiene las proporciones cuadradas originales */
+}
+
+.avatar distorted {
+    width: 200px;
+    height:400px; /* Altura es el doble del ancho */
+}

@@ -1,0 +1,29 @@
+/* 
+* Checklist
+*   ¿Los elementos p impares comparten una clase? 
+*       Si, la denomine "odd".
+*   ¿Los elementos div pares tienen IDs únicos? 
+*       Si, second y fourth.
+*   ¿El elemento número 3 tiene múltiples clases?
+*       Tiene dos clases.
+*/
+
+.odd {
+    background-color: pink;
+    font-family: Verdana, 'DejaVu Sans', sans-serif;
+}
+
+#second {
+    color: blue;
+    font-size: 36px;
+}
+
+.prime {
+    font-size: 24px;
+}
+
+#fourth {
+    background-color: lightgreen;
+    font-size: 24px;
+    font-weight: bold;
+}
