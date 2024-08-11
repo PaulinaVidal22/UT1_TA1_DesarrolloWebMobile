@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo de Aplicación 6</title>
+    <link rel="stylesheet" href="forms.css" />
+</head>
+<body>
+    <h2>Encuesta de Satisfacción <!-- (??) --> </h2>
+    <form action="/submit" method="POST" autocomplete="on" novalidate>
+        <!-- Pregunta con botones de radio -->
+        <p>¿Qué tan satisfecho estás con nuestro servicio?</p>
+        <input type="radio" id="muy_satisfecho" name="satisfaccion" value="muy_satisfecho" required>
+        <label for="muy_satisfecho">Muy Satisfecho</label><br>
+        
+        <input type="radio" id="satisfecho" name="satisfaccion" value="satisfecho">
+        <label for="satisfecho">Satisfecho</label><br>
+        
+        <input type="radio" id="neutral" name="satisfaccion" value="neutral">
+        <label for="neutral">Neutral</label><br>
+        
+        <input type="radio" id="insatisfecho" name="satisfaccion" value="insatisfecho">
+        <label for="insatisfecho">Insatisfecho</label><br>
+        
+        <input type="radio" id="muy_insatisfecho" name="satisfaccion" value="muy_insatisfecho">
+        <label for="muy_insatisfecho">Muy Insatisfecho</label><br><br>
+
+        <!-- Pregunta de selección múltiple con casillas de verificación -->
+        <p>¿En qué áreas crees que podemos mejorar? (Selecciona todas las que correspondan)</p>
+        <input type="checkbox" id="atencion_cliente" name="mejoras[]" value="atencion_cliente">
+        <label for="atencion_cliente">Atención al Cliente</label><br>
+        
+        <input type="checkbox" id="calidad_producto" name="mejoras[]" value="calidad_producto">
+        <label for="calidad_producto">Calidad del Producto</label><br>
+        
+        <input type="checkbox" id="tiempo_entrega" name="mejoras[]" value="tiempo_entrega">
+        <label for="tiempo_entrega">Tiempo de Entrega</label><br>
+        
+        <input type="checkbox" id="precios" name="mejoras[]" value="precios">
+        <label for="precios">Precios</label><br>
+        
+        <input type="checkbox" id="otros" name="mejoras[]" value="otros">
+        <label for="otros">Otros</label><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
